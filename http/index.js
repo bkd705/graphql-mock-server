@@ -2,7 +2,7 @@ const koa = require('koa')
 const koaRouter = require('koa-router')
 const koaBody = require('koa-bodyparser')
 const { graphqlKoa, graphiqlKoa } = require('apollo-server-koa')
-const graphqlSchema = require('./schemas/User')
+const graphqlSchema = require('./schemas/Root')
 
 const app = new koa()
 const router = new koaRouter()
