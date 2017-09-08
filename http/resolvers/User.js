@@ -4,10 +4,13 @@ const uuid = require('uuid/v4')
 const users = Factory.createMany('User', 25)
 
 module.exports = {
-  Query: {
-    allUsers: () => users
+  RootQuery: {
+    allUsers: () => users,
+    user: (_, data) => {
+      return users.find(user => user.id === data.id)
+    }
   },
-  Mutation: {
+  RootMutation: {
     createUser: (_, data) => {
       const newUser = Object.assign({ id: uuid() }, data)
       users.push(newUser)
