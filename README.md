@@ -6,16 +6,12 @@ A server used for serving a GraphQL and GraphiQL endpoint with mock data. Concep
 
 __Requirements__
 
-Only tested on Node ^7.9.0
-PostgreSQL
+Only tested on Node ^7.9.0 with `--harmony`
 
 __Setup__
 Super simple setup for development.
 1. `cd graphql-mock-server && yarn install`
-2. `cp .env.example .env`
-3. Modify `.env` contents with environment configuration (database, port, etc)
-4. Migrate database (TODO: add command once setup)
-5. Seed database (TODO: add command once setup)
+2. `yarn start`
 
 ## Contributing
 
