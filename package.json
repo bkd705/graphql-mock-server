@@ -7,15 +7,18 @@
   "author": "bkd705 <brennenkdenomme@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --harmony_default_parameters --harmony-destructuring http/index.js"
+    "start": "nodemon --harmony http/index.js"
   },
   "dependencies": {
     "apollo-server-koa": "^1.1.2",
+    "basic-factory": "^0.0.2",
+    "faker": "^4.1.0",
     "graphql": "^0.11.3",
     "graphql-tools": "^1.2.2",
     "koa": "^2.3.0",
     "koa-bodyparser": "^4.2.0",
-    "koa-router": "^7.2.1"
+    "koa-router": "^7.2.1",
+    "uuid": "^3.1.0"
   },
   "devDependencies": {
     "nodemon": "^1.12.0"
