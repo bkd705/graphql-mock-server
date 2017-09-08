@@ -1,0 +1,23 @@
+{
+  "name": "graphql-mock-server",
+  "version": "1.0.0",
+  "description": "A simple graphql server providing mock data.",
+  "main": "index.js",
+  "repository": "https://github.com/bkd705/graphql-mock-server.git",
+  "author": "bkd705 <brennenkdenomme@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --harmony_default_parameters --harmony-destructuring http/index.js"
+  },
+  "dependencies": {
+    "apollo-server-koa": "^1.1.2",
+    "graphql": "^0.11.3",
+    "graphql-tools": "^1.2.2",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.0"
+  }
+}
