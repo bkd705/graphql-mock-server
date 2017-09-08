@@ -13,6 +13,15 @@ const typeDefs = `
   type Query {
     allUsers: [User!]!
   }
+
+  type Mutation {
+    createUser(
+      username: String!,
+      email: String!,
+      firstName: String!,
+      lastName: String!
+    ): User
+  }
 `
 
 module.exports = makeExecutableSchema({ typeDefs, resolvers })
